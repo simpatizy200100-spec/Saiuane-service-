@@ -1,0 +1,10 @@
+{
+  "name":"Saiuane Service",
+  "short_name":"Saiuane Service",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#0d0d0f",
+  "theme_color":"#111111",
+  "description":"Aplicativo do Saiuane Service para organizar publicações e conteúdos.",
+  "icons":[]
+}
