@@ -1,112 +1,53 @@
-<!doctype html>
-<html lang="pt">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#111111">
-<link rel="manifest" href="manifest.json">
+<!doctype html><html lang="pt-MZ"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07131e"><link rel="manifest" href="manifest.json">
 <title>Saiuane Service</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#0d0d0f;color:#fff}
-header{padding:22px 18px 12px;background:#111;border-bottom:1px solid #292929;position:sticky;top:0;z-index:5}
-.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:50%;background:#fff;color:#d40000;display:grid;place-items:center;font-weight:900;font-size:17px;border:3px solid #d40000}.name{font-size:21px;font-weight:800}.sub{font-size:12px;color:#aaa;margin-top:3px}
-main{padding:16px;max-width:720px;margin:auto}.card{background:#17171a;border:1px solid #29292d;border-radius:16px;padding:16px;margin-bottom:14px}.title{font-size:18px;font-weight:800;margin-bottom:12px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{padding:15px;border-radius:13px;background:#202024}.stat b{font-size:24px;display:block}.stat span{font-size:12px;color:#aaa}
-button{border:0;border-radius:12px;padding:13px 15px;background:#e00000;color:#fff;font-weight:800;font-size:14px}button.secondary{background:#29292e}button.full{width:100%;margin-top:8px}
-textarea,input{width:100%;background:#0f0f11;color:#fff;border:1px solid #36363a;border-radius:11px;padding:12px;font-size:14px;margin:6px 0 10px}textarea{min-height:110px;resize:vertical}
-.nav{position:fixed;bottom:0;left:0;right:0;background:#111;border-top:1px solid #292929;display:flex;justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:10}.nav button{background:transparent;color:#aaa;padding:8px;font-size:11px}.nav button.active{color:#fff}
-.screen{display:none}.screen.active{display:block}.idea{padding:11px;background:#202024;border-radius:10px;margin:7px 0;font-size:14px}
-.notice{font-size:12px;color:#aaa;line-height:1.5}.ok{color:#70e070}
-</style>
-</head>
-<body>
-<header><div class="brand"><div class="logo">H</div><div><div class="name">SAIUANE SERVICE</div><div class="sub">Motor • Câmbio automático • Manutenção</div></div></div></header>
+:root{--bg:#06111b;--p:#0b1c2a;--p2:#0e2536;--l:#19435b;--t:#fff;--m:#91a4b3;--r:#ff2029}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(#06111b,#03090f);color:var(--t);font-family:Arial,sans-serif}.app{max-width:520px;margin:auto;padding-bottom:80px}
+.top{position:sticky;top:0;z-index:5;background:#06111bf2;border-bottom:1px solid #17364b;padding:12px 16px;display:flex;gap:12px;align-items:center}.logo{width:44px;height:44px;border-radius:50%;background:#fff;border:2px solid var(--r);color:#d00;font-weight:900;font-size:24px;display:grid;place-items:center}.brand b{font-size:18px}.brand small{display:block;color:#a5b3bd;margin-top:4px}
+main{padding:16px}.hero,.card,.post{background:linear-gradient(145deg,#0e2638,#091925);border:1px solid #17405a;border-radius:18px}.hero{padding:20px}.hero h1{margin:0 0 8px;font-size:24px}.hero p,.card small{color:var(--m);line-height:1.45}.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:14px}.card{padding:16px;min-height:105px;color:#fff}.card b{display:block;margin-top:10px}.ico{font-size:24px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:#0a1d2c;border:1px solid #163b52;border-radius:15px;padding:14px}.stat strong{font-size:22px;display:block}.title{display:flex;align-items:center;gap:12px;margin-bottom:14px}.back{background:none;font-size:28px}.input,.area{width:100%;background:#071827;color:#fff;border:1px solid #1c4862;border-radius:13px;padding:13px;margin-top:7px}.area{min-height:120px}.label{color:#b8c6cf;font-size:12px;font-weight:bold;margin-top:15px}.chips{display:flex;gap:8px;overflow:auto}.chip,.secondary{background:#0b2537;color:#fff;border:1px solid #1d4a64;border-radius:13px;padding:10px 14px}.chip.on{background:var(--r);border-color:var(--r)}.primary{width:100%;padding:15px;border-radius:14px;background:linear-gradient(135deg,#ff2932,#d50009);color:#fff;font-weight:800;margin-top:15px}.media{border:1px dashed #2b6384;border-radius:15px;padding:28px;text-align:center;background:#081b2a;margin-top:7px}.post{padding:14px;margin:10px 0}.meta{display:flex;justify-content:space-between;color:#91a4b3;font-size:11px}.hide{display:none}.bottom{position:fixed;bottom:0;left:0;right:0;margin:auto;max-width:520px;height:70px;background:#050e16f7;border-top:1px solid #17364b;display:grid;grid-template-columns:repeat(4,1fr);z-index:10}.nav{background:none;color:#8395a3;font-size:11px}.nav b{display:block;font-size:22px;margin-bottom:3px}.nav.active{color:#ff3840}.toast{position:fixed;bottom:82px;left:50%;transform:translateX(-50%);background:#123047;border:1px solid #2c5f7c;padding:12px 16px;border-radius:12px;display:none;z-index:20}
+</style></head><body><div class="app">
+<header class="top"><div class="logo">H</div><div class="brand"><b>SAIUANE SERVICE</b><small>Motor • Câmbio automático • Manutenção</small></div></header>
 
-<main>
-<section id="home" class="screen active">
-<div class="card"><div class="title">Painel</div><div class="grid">
-<div class="stat"><b id="posts">0</b><span>Publicações</span></div>
-<div class="stat"><b id="scheduled">0</b><span>Agendadas</span></div>
-<div class="stat"><b>24/7</b><span>Organização</span></div>
-<div class="stat"><b>✓</b><span>Pronto para usar</span></div>
-</div></div>
-<div class="card"><div class="title">Ações rápidas</div>
-<button class="full" onclick="show('create')">＋ Criar publicação</button>
-<button class="full secondary" onclick="show('calendar')">📅 Ver agenda</button>
-</div>
-<div class="card"><div class="title">Sobre o aplicativo</div><div class="notice">Use este aplicativo para organizar publicações, ideias e conteúdos do Saiuane Service. Os dados desta versão ficam guardados no próprio navegador.</div></div>
-</section>
+<main id="home"><div class="hero"><h1>Qualidade, confiança e atendimento profissional.</h1><p>Organize os conteúdos do Saiuane Service e prepare publicações para as redes sociais.</p></div>
+<div class="grid">
+<button class="card" onclick="show('create')"><div class="ico">➕</div><b>Nova publicação</b><small>Post, Reels ou Story</small></button>
+<button class="card" onclick="show('agenda')"><div class="ico">📅</div><b>Agenda</b><small>Programar conteúdos</small></button>
+<button class="card" onclick="show('posts')"><div class="ico">▣</div><b>Meus posts</b><small>Rascunhos e agendados</small></button>
+<button class="card" onclick="show('stats')"><div class="ico">▥</div><b>Estatísticas</b><small>Resultados</small></button>
+<button class="card" onclick="show('ideas')"><div class="ico">✦</div><b>Ideias</b><small>Conteúdos para oficina</small></button>
+<button class="card" onclick="show('settings')"><div class="ico">⚙</div><b>Configurações</b><small>Conta e preferências</small></button>
+</div><h3>Hoje</h3><div class="stats"><div class="stat"><strong id="a">0</strong><small>Publicações</small></div><div class="stat"><strong id="b">0</strong><small>Rascunhos</small></div><div class="stat"><strong id="c">0</strong><small>Agendadas</small></div><div class="stat"><strong>24/7</strong><small>Organização</small></div></div></main>
 
-<section id="create" class="screen">
-<div class="card"><div class="title">Criar publicação</div>
-<label>Tipo</label><select id="type" style="width:100%;padding:12px;border-radius:10px;background:#0f0f11;color:#fff;border:1px solid #36363a;margin:6px 0 10px"><option>Post</option><option>Reels</option><option>Story</option></select>
-<label>Texto</label><textarea id="text" placeholder="Ex.: Seu Honda está com problema? A Saiuane Service resolve."></textarea>
-<label>Data e hora para organizar</label><input id="date" type="datetime-local">
-<button class="full" onclick="savePost()">Guardar publicação</button>
-<button class="full secondary" onclick="preview()">👁 Pré-visualizar</button>
-</div>
-<div id="preview" class="card" style="display:none"></div>
-</section>
+<main id="create" class="hide"><div class="title"><button class="back" onclick="show('home')">‹</button><h2>Nova publicação</h2></div>
+<div class="label">Tipo</div><div class="chips"><button class="chip on" onclick="kind(this)">Post</button><button class="chip" onclick="kind(this)">Reels</button><button class="chip" onclick="kind(this)">Story</button></div>
+<div class="label">Foto ou vídeo</div><div class="media" onclick="file.click()">📷<br><b>Toque para adicionar</b><br><small>JPG, PNG ou MP4</small><input id="file" type="file" accept="image/*,video/*" hidden></div>
+<div class="label">Legenda</div><textarea id="cap" class="area" placeholder="Escreva a publicação..."></textarea>
+<div class="label">Título</div><input id="ttl" class="input" placeholder="Ex.: Revisão completa do seu Honda">
+<div class="label">Data e hora (opcional)</div><input id="dt" class="input" type="datetime-local">
+<div class="label">Hashtags</div><input id="tag" class="input" placeholder="#SaiuaneService #Honda #Manutenção">
+<button class="primary" onclick="save()">Guardar / Agendar</button></main>
 
-<section id="calendar" class="screen">
-<div class="card"><div class="title">Agenda</div><div id="list"></div></div>
-</section>
+<main id="posts" class="hide"><div class="title"><button class="back" onclick="show('home')">‹</button><h2>Meus posts</h2></div><div id="plist"></div></main>
+<main id="agenda" class="hide"><div class="title"><button class="back" onclick="show('home')">‹</button><h2>Agenda</h2></div><div id="alist"></div></main>
+<main id="stats" class="hide"><div class="title"><button class="back" onclick="show('home')">‹</button><h2>Estatísticas</h2></div><div class="stats"><div class="stat"><strong id="s1">0</strong><small>Conteúdos</small></div><div class="stat"><strong id="s2">0</strong><small>Agendados</small></div></div><div class="card" style="margin-top:14px"><b>Métricas reais</b><small>As métricas do Facebook/Instagram entram quando as contas oficiais forem conectadas.</small></div></main>
+<main id="ideas" class="hide"><div class="title"><button class="back" onclick="show('home')">‹</button><h2>Ideias de conteúdo</h2></div><div id="ilist"></div></main>
+<main id="settings" class="hide"><div class="title"><button class="back" onclick="show('home')">‹</button><h2>Configurações</h2></div><div class="card"><b>Facebook</b><small>Conexão oficial da Meta ainda não configurada.</small></div><div class="card" style="margin-top:10px"><b>Instagram</b><small>Conexão oficial da Meta ainda não configurada.</small></div><div class="card" style="margin-top:10px"><small>Para publicar diretamente nas redes sociais, será necessário autorizar as contas através das APIs oficiais. Não armazenamos senhas nem criamos seguidores falsos.</small></div></main>
 
-<section id="ideas" class="screen">
-<div class="card"><div class="title">Ideias para o Saiuane Service</div>
-<div class="idea">🔧 Antes e depois de uma manutenção.</div>
-<div class="idea">🚗 3 sinais de que o seu carro precisa de manutenção.</div>
-<div class="idea">⚙️ Dica rápida sobre câmbio automático.</div>
-<div class="idea">📹 Mostre o processo de reparação, do diagnóstico visual ao resultado.</div>
-<div class="idea">📍 Lembre os clientes de onde fica a oficina.</div>
-</div></section>
-
-<section id="settings" class="screen">
-<div class="card"><div class="title">Configurações</div>
-<button class="full" onclick="installApp()">📲 Instalar na tela inicial</button>
-<p class="notice">Se o navegador não mostrar a instalação automática, abra o menu ⋮ do Chrome e escolha <b>“Adicionar à tela inicial”</b> ou <b>“Instalar aplicativo”</b>.</p>
-<button class="full secondary" onclick="clearData()">Apagar dados locais</button>
-</div></section>
-</main>
-
-<div class="nav">
-<button class="active" onclick="show('home',this)">⌂<br>Início</button>
-<button onclick="show('create',this)">＋<br>Criar</button>
-<button onclick="show('calendar',this)">▣<br>Agenda</button>
-<button onclick="show('ideas',this)">★<br>Ideias</button>
-<button onclick="show('settings',this)">⚙<br>Config.</button>
-</div>
-
-<script>
+<nav class="bottom"><button class="nav active" onclick="show('home')"><b>⌂</b>Início</button><button class="nav" onclick="show('create')"><b>＋</b>Criar</button><button class="nav" onclick="show('agenda')"><b>▣</b>Agenda</button><button class="nav" onclick="show('settings')"><b>⋮</b>Mais</button></nav><div id="toast" class="toast"></div>
+</div><script>
 let posts=JSON.parse(localStorage.getItem('saiuane_posts')||'[]');
-function save(){localStorage.setItem('saiuane_posts',JSON.stringify(posts));update()}
-function update(){document.getElementById('posts').textContent=posts.length;document.getElementById('scheduled').textContent=posts.filter(x=>x.date).length;render()}
-function show(id,btn){
- document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');
- if(btn){document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}
- render();
-}
-function savePost(){
- let t=document.getElementById('text').value.trim();if(!t){alert('Escreva o texto da publicação.');return}
- posts.unshift({id:Date.now(),type:document.getElementById('type').value,text:t,date:document.getElementById('date').value});
- save();alert('Publicação guardada!');show('calendar');
-}
-function preview(){
- let t=document.getElementById('text').value||'Pré-visualização da sua publicação...';
- let p=document.getElementById('preview');p.style.display='block';p.innerHTML='<div class="title">Pré-visualização</div><div style="background:#0d0d0f;border-radius:12px;padding:15px;line-height:1.5">'+escapeHtml(t)+'</div>';
-}
-function render(){
- let l=document.getElementById('list');if(!l)return;
- if(!posts.length){l.innerHTML='<div class="notice">Ainda não existem publicações guardadas.</div>';return}
- l.innerHTML=posts.map(x=>`<div class="idea"><b>${x.type}</b>${x.date?' • '+new Date(x.date).toLocaleString('pt-MZ'):''}<br>${escapeHtml(x.text)}<br><button class="secondary" style="margin-top:8px;padding:8px 10px" onclick="del(${x.id})">Eliminar</button></div>`).join('');
-}
-function del(id){posts=posts.filter(x=>x.id!==id);save()}
-function escapeHtml(s){return s.replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
-function clearData(){if(confirm('Apagar todas as publicações guardadas?')){localStorage.removeItem('saiuane_posts');posts=[];update()}}
-let deferredPrompt=null;
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e});
-async function installApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt=null}else alert('No Chrome, abra o menu ⋮ e escolha “Adicionar à tela inicial” ou “Instalar aplicativo”.')}
-if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
-update();
-</script>
-</body></html>
+const $=x=>document.getElementById(x);
+function show(id){document.querySelectorAll('main').forEach(x=>x.classList.add('hide'));$(id).classList.remove('hide');render();scrollTo(0,0)}
+function kind(x){document.querySelectorAll('.chip').forEach(b=>b.classList.remove('on'));x.classList.add('on')}
+function toast(x){$('toast').textContent=x;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',2200)}
+function save(){let cap=$('cap').value.trim();if(!cap){toast('Escreva a publicação primeiro');return}let p={id:Date.now(),kind:document.querySelector('.chip.on').textContent,title:$('ttl').value,cap,date:$('dt').value,tags:$('tag').value,status:$('dt').value?'Agendada':'Rascunho'};posts.unshift(p);localStorage.setItem('saiuane_posts',JSON.stringify(posts));toast(p.status==='Agendada'?'Agendada neste aparelho':'Rascunho guardado');$('cap').value='';$('ttl').value='';$('dt').value='';$('tag').value='';show('posts')}
+function esc(s){return String(s||'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function render(){$('a').textContent=posts.length;$('b').textContent=posts.filter(x=>x.status==='Rascunho').length;$('c').textContent=posts.filter(x=>x.status==='Agendada').length;$('s1').textContent=posts.length;$('s2').textContent=posts.filter(x=>x.status==='Agendada').length;
+$('plist').innerHTML=posts.length?posts.map(p=>`<div class="post"><div class="meta"><span>${esc(p.kind)}</span><span>${esc(p.status)}</span></div><b>${esc(p.title||'Sem título')}</b><p style="white-space:pre-wrap;color:#c4d0d7">${esc(p.cap)}</p><small style="color:#ff4650">${esc(p.tags)}</small>${p.date?`<small style="display:block;color:#91a4b3;margin-top:7px">📅 ${new Date(p.date).toLocaleString('pt-MZ')}</small>`:''}</div>`).join(''):'<div class="card"><b>Ainda não há posts.</b><small>Toque em Criar para começar.</small></div>';
+let q=posts.filter(p=>p.status==='Agendada');$('alist').innerHTML=q.length?q.map(p=>`<div class="post"><div class="meta"><span>📅 Agendado</span><span>${new Date(p.date).toLocaleString('pt-MZ')}</span></div><b>${esc(p.title||p.kind)}</b><p>${esc(p.cap)}</p></div>`).join(''):'<div class="card"><b>Agenda vazia.</b><small>Crie uma publicação e escolha data e hora.</small></div>';
+let ideas=['Antes e depois de uma manutenção','3 sinais de problema no câmbio automático','Quando trocar o óleo do motor','Dicas para cuidar do seu Honda','Serviço concluído: mostre o resultado','Erro comum ao escolher óleo do carro'];$('ilist').innerHTML=ideas.map(i=>`<div class="post"><b>💡 ${i}</b><button class="secondary" style="margin-top:10px" onclick="idea('${i.replace(/'/g,"\\'")}')">Usar ideia</button></div>`).join('')}
+function idea(x){show('create');$('cap').value=x+':\n\nExplique o serviço e mostre o resultado ao cliente.');toast('Ideia colocada no editor')}
+render();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script></body></html>
